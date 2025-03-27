@@ -29,7 +29,7 @@ body {
 
 /* Hero section */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.801)), url(../images/hero-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.95)), url(../images/hero-bg.jpg);
     background-size: cover;
     background-position: center;
     padding: 100px 0;
