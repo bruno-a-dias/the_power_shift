@@ -20,6 +20,7 @@ body {
 
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
+    transition: color 0.3s ease;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -45,6 +46,13 @@ body {
     margin-bottom: 30px;
 }
 
+#countdown {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
 /* About section */
 .about {
     background-color: #111;
@@ -63,6 +71,34 @@ body {
 .highlights i {
     color: #ffd700;
     margin-right: 10px;
+}
+
+/* History section */
+#history .text-white {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.embed-responsive {
+    width: 100%;
+    max-width: 400px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.embed-responsive::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
 }
 
 /* Gallery section */
@@ -102,6 +138,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 30px;
+    height: 100%;
 }
 
 .palestrante-imagem img {
@@ -194,6 +231,16 @@ footer {
     
     .card-palestrante {
         margin-bottom: 20px;
+        height: auto;
+    }
+    
+    .palestrante-imagem img {
+        height: auto;
+        max-height: 300px;
+    }
+    
+    .galeria img {
+        height: 200px;
     }
 }
 
@@ -205,9 +252,11 @@ footer {
     .hero h2 {
         font-size: 1rem;
     }
-    
-    .palestrante-imagem img {
-        height: 200px;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .galeria img {
+        height: 400px;
     }
 }
 
