@@ -1,0 +1,224 @@
+/* Estilos gerais */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.destaque, h1, h2 {
+    color: #ffd700;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffd700;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* About section */
+.about {
+    background-color: #111;
+    padding: 60px 0;
+}
+
+.highlights {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.highlights li {
+    margin-bottom: 15px;
+}
+
+.highlights i {
+    color: #ffd700;
+    margin-right: 10px;
+}
+
+/* Gallery section */
+.galeria img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Schedule section */
+.schedule {
+    background-color: #222;
+    padding: 60px 0;
+}
+
+.schedule ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.schedule li {
+    margin-bottom: 30px;
+}
+
+.schedule time {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* Speakers section */
+.palestrantes-section {
+    background-color: #111;
+    padding: 60px 0;
+}
+
+.card-palestrante {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.palestrante-imagem img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.palestrante-info {
+    padding: 20px;
+}
+
+.palestrante-nome {
+    color: #ffd700;
+}
+
+.palestrante-social a {
+    color: #ffd700;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Registration and Contact sections */
+.registration, .contact {
+    padding: 60px 0;
+}
+
+.table {
+    background-color: #222;
+}
+
+form {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-control, .form-select {
+    background-color: #333;
+    border-color: #444;
+    color: #fff;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #444;
+    border-color: #ffd700;
+    color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
+}
+
+.btn-warning {
+    background-color: #ffd700;
+    border-color: #ffd700;
+    color: #000;
+}
+
+.btn-warning:hover {
+    background-color: #e6c200;
+    border-color: #e6c200;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.social-media a:hover {
+    color: #ffd700;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    .card-palestrante {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 1rem;
+    }
+    
+    .palestrante-imagem img {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
